@@ -3,34 +3,39 @@
     :gutter="10" 
     justify="space-around">
         <el-col 
-        :span="6">
+        :span="8">
             <div class="grid-content bg-purple">
                 <usravator></usravator>
             </div>
         </el-col>
-        <el-col :span="18">
+        <el-col :span="16">
+            <h3 style="text-align:center" >我的收藏</h3>
             <div class="grid-content bg-purple">
-                <usrdetail></usrdetail>
+                <mycarts v-for="i in 2" :key="i" :items="items"></mycarts>
+                <pagefooter></pagefooter>
             </div>
         </el-col>
     </el-row>
 </template>
 <script>
 import usravator from "../../plugins/profile/usravator"
-import  usrdetail from "../../plugins/profile/usrdetail"
+import mycarts from "../../plugins/mycarts"
+import pagefooter from '../../plugins/pagefooter'
 export default {
     components:{ 
         usravator,
-        usrdetail,
+        mycarts,
+        pagefooter,
     },
     data() {
         return{
+            items: 5
         }
     }
     
 }
 </script>
-<style>
+<style scoped>
 .el-row {
     margin-bottom: 20px;
     
@@ -39,10 +44,13 @@ export default {
     border-radius: 4px;
   }
    .bg-purple {
-    background: #d3dce6;
+    background: #ffffff;
   }
   .grid-content {
     border-radius: 4px;
     min-height: 36px;
+    text-align: center;
+
   }
+
 </style>

@@ -1,5 +1,5 @@
 <template>
-<div> 
+<div class="aside"> 
     <el-avatar :size="100" :src="url"></el-avatar>
       <el-menu
         router
@@ -40,3 +40,8 @@ export default ({
 
 })
 </script>
+<style scoped>
+.el-menu {
+     border-right: solid 1px #ffffff;
+  }
+</style>

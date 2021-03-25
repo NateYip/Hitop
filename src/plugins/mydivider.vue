@@ -8,24 +8,36 @@
     active-text-color="#ffd04b"
     >
     <el-row  type="flex"  justify="space-around">
-        <el-menu-item 
+        <el-col :span="4">
+            <el-menu-item 
             index="/mainpart/fir"
-        >{{choices[0]}}</el-menu-item>
-        <el-menu-item 
+            >{{choices[0]}}</el-menu-item>
+        </el-col>
+        <el-col :span="4">
+            <el-menu-item 
             index="/mainpart/sec"
-        >{{choices[1]}}</el-menu-item>
-        <el-menu-item 
+            >{{choices[1]}}</el-menu-item>
+        </el-col>
+        <el-col :span="4">
+            <el-menu-item 
             index="/mainpart/thi"
-        >{{choices[2]}}</el-menu-item>
-        <el-menu-item 
+            >{{choices[2]}}</el-menu-item>
+        </el-col>
+        <el-col :span="4">
+            <el-menu-item 
             index="/mainpart/for"
-        >{{choices[3]}}</el-menu-item>
-        <el-menu-item 
+            >{{choices[3]}}</el-menu-item>
+        </el-col>
+        <el-col :span="4">
+            <el-menu-item 
             index="/mainpart/fif"
-        >{{choices[4]}}</el-menu-item>
-        <el-menu-item 
+            >{{choices[4]}}</el-menu-item>
+        </el-col>
+        <el-col :span="4">
+            <el-menu-item 
             index="/mainpart/six"
-        >{{choices[5]}}</el-menu-item>        
+            >{{choices[5]}}</el-menu-item>    
+        </el-col>    
     </el-row>
 </el-menu>
 </template>
@@ -40,9 +52,11 @@ export default {
 }
 </script>
 
-<style >
+<style scoped>
 .el-row {
     margin-bottom: 0px;
 }
-
+.el-col {
+    text-align: center;
+}
 </style>

@@ -1,17 +1,18 @@
 <template>
 <div>
     <el-avatar 
-    style="margin-top:20px"
     :size="200" :src="Url"></el-avatar>
-    
+    <el-divider></el-divider>
+    <usrdetail></usrdetail>
 </div>
     
 </template>
 
 <script>
+import usrdetail from "./usrdetail"
 export default {
     components:{
-
+        usrdetail,
     },
     data() {
         return{
@@ -22,4 +23,16 @@ export default {
     
 }
 </script>
+<style scoped>
+.el-avatar{
+    margin: 30px 0 0 0;
+}
+.el-divider--horizontal {
+    display: block;
+    height: 1px;
+    width: 90%;
+    margin: 5% 5%;
+    background-color: #9a9a9a;
+}
+</style>
 

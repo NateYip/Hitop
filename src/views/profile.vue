@@ -12,11 +12,8 @@
             index="/profile/usrinfo"
         >我的信息</el-menu-item>
         <el-menu-item 
-            index="/profile/favinfo"
-        >我的收藏</el-menu-item>
-        <el-menu-item 
             index="/profile/indentinfo"
-        >我的订单</el-menu-item>
+        >历史订单</el-menu-item>
     </el-menu>
     <router-view></router-view>
 </el-main>
@@ -38,7 +35,7 @@ export default {
     }
 };
 </script>
-<style>
+<style scoped>
 .el-row {
     margin-bottom: 0px;
 }

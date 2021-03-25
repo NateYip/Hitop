@@ -1,11 +1,10 @@
 <template>
-    <el-main class="mymain">
-        <ul class="infinite-list" v-infinite-scroll="load" style="overflow:auto"  >
+    <el-main>
             <mycarousel></mycarousel>
-            <mydivider :choices="choices" ></mydivider>
-            <router-view></router-view>
-        </ul>
-        
+            <div class="mydivider">
+                <mydivider :choices="choices" class="mydivider"></mydivider>
+                <router-view></router-view>
+            </div>        
     </el-main>
 </template>
 
@@ -20,7 +19,7 @@ export default {
    data () {
       return {
         choices: [
-            "商品热销","猜你喜欢","数码3C","生活用品","品牌服饰","生鲜速递",
+            "商品热销","猜你喜欢","数码3C","生活用品","品牌服饰","精选美食",
         ],
         endless: 8
       }
@@ -33,11 +32,12 @@ export default {
     
 }
 </script>
-<style type="text/css">
- .el-main {
-    background-color: #ffffff;
-    color: #333;
-    text-align: center;
-    height:calc(100vh - 60px)
-  }
+<style scoped>
+
+.mydivider{
+  position:sticky;
+  top: 0px;
+  background-color: #ffffff;
+  z-index: 99;
+}
 </style>

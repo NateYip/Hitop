@@ -1,6 +1,6 @@
 <template>
 <el-main>
-  <mycarts v-for="i in iteminpage" :key="i"></mycarts>
+  <mycarts v-for="i in iteminpage" :key="i" :items="items"></mycarts>
 </el-main>
   
 </template>
@@ -13,6 +13,7 @@ export default {
     },
     data()  {
       return {
+        items: 6,
         iteminpage: 4,
       }
     }
