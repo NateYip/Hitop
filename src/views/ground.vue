@@ -57,7 +57,7 @@ data() {
 }
 </script>
 
-<style>
+<style scoped>
 .el-main{
     text-align: center;
     padding-top: 10px;

@@ -29,7 +29,7 @@ export default {
             discriber: "默认商品",
             Num: 1,
             defaultprice: 99.00 ,
-            totalprice: 0 ,
+            totalprice: 99.00 ,
         }
     },
     methods: {

@@ -61,4 +61,8 @@ export default {
   background-color: #ffffff;
   z-index: 99;
 }
+.el-main{
+    text-align: center;
+    padding-top: 0px;
+}
 </style>
