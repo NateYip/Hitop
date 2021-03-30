@@ -31,7 +31,7 @@ export default ({
     font-size: 14px;
     opacity: 0.75;
     line-height: 300px;
-    margin: 0;
+    margin-top: 10px;
   }
   
   .el-carousel__item:nth-child(2n) {

@@ -25,7 +25,7 @@ export default ({
     },
     data(){ 
         return{
-          url:"https://i.loli.net/2021/03/22/Q3gbo7cyv2AKz6O.jpg"
+          
         };
     },
     methods:{
@@ -36,19 +36,20 @@ export default ({
 </script>
 <style  scoped>
 .el-header {
-  background-color: #B3C0D1;
+  background-color: #ffffff;
   color: #333;
+  border-bottom: 1px solid rgba(244,244,245);
   text-align: center;
   line-height: 60px;
+  padding:0;
 }
 
 .el-aside {
-  margin-top:5px;
   background-color: #ffffff;
   color: #333;
   text-align: center;
   line-height: 200px;
-  border-right: solid 1px #e6e6e6;
+  border-right: 1px solid rgba(244,244,245);
 }
 .outtercontain{
     display: flex;
