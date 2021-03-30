@@ -9,10 +9,12 @@
           <i class="el-icon-shopping-bag-1"></i>
           <span slot="title">主&ensp;&ensp;页</span>
         </el-menu-item>
+        <!--
         <el-menu-item index="/ground" route="/ground"  >
           <i class="el-icon-video-camera"></i>
           <span slot="title">广&ensp;&ensp;场</span>
         </el-menu-item> 
+        -->
         <el-menu-item index="/profile" route="/profile" >
           <i class="el-icon-user"></i>
           <span slot="title">个&ensp;&ensp;人</span>

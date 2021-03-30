@@ -77,11 +77,12 @@ export default new Router({
                     name:'trolley',
                     component:()=>import('./views/trolley.vue')
                 },
+                /*
                 {
                     path:'/ground',
                     name:'ground',
                     component:()=>import('./views/ground.vue')
-                },
+                },*/
             ]
         }
     ]
